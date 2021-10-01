@@ -9,6 +9,23 @@ public class Ford {
 	String myfordmodel;
 	String fordspecs;
 	String color;
+		//access modifier example
+//	private String vin;
+	
+	/*
+	 * Definition for method exercise.
+	 */
+//	public void printOutCarDetails() {
+//		System.out.println("The car is a " + myfordyear + " " + myfordmake + " " + myfordmodel);
+//	}
+	
+	public void setYear(int year) {
+		myfordyear = year;
+	}
+	
+	public int getYear() {
+		return myfordyear;
+	}
 	
 	public static void main(String[] args) {
 		/*
@@ -24,6 +41,8 @@ public class Ford {
 		fordCar1.myfordmodel = "Fusion";
 		fordCar1.fordspecs = "Hybrid";
 		fordCar1.color = "Gray";
+			//method call for method exercise
+//		fordCar1.printOutCarDetails();
 		
 		/*
 		 * Next, create a second Ford object, doing the same as the first, picking out what properties
@@ -35,6 +54,9 @@ public class Ford {
 		fordCar2.myfordmodel = "Taurus";
 		fordCar2.fordspecs = "Petrol";
 		fordCar2.color = "Blue";
+		
+			//method call for method exercise
+//		fordCar2.printOutCarDetails();
 		
 			//print out car 1 details
 		System.out.println("The Year for object 1 is a: " + fordCar1.myfordyear);
